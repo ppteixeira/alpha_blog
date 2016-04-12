@@ -28,8 +28,8 @@ class UsersController < ApplicationController
     end
   end
 
-  def delete
-    
+  def show
+    @user = User.find(params[:id])
   end
 
   private
